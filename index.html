@@ -3,74 +3,142 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07182b">
 
     <title>Yukthi Towing Services | 24/7 Bangalore Towing</title>
 
     <meta name="description"
         content="Yukthi Towing Services provides 24/7 car towing, bike towing, accident recovery, breakdown assistance and long-distance towing across Bangalore.">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yukthi Towing Services | 24/7 Bangalore Towing">
+    <meta property="og:description"
+        content="Fast, dependable car and bike towing, accident recovery and roadside assistance across Bengaluru. Call 24/7.">
+    <meta property="og:image" content="assets/hero-towing.jpg">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2307182b'/%3E%3Ctext x='32' y='45' font-size='38' font-weight='900' text-anchor='middle' fill='%23ff7417' font-family='Arial'%3EY%3C/text%3E%3C/svg%3E">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="extra.css">
+
+    <!-- Structured data: Local business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutomotiveBusiness",
+        "name": "Yukthi Towing Services",
+        "description": "24/7 car towing, bike towing, accident recovery, breakdown assistance and long-distance towing in Bangalore.",
+        "telephone": ["+919916999026", "+917483544001"],
+        "image": "assets/hero-towing.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bangalore",
+            "addressRegion": "Karnataka",
+            "addressCountry": "IN"
+        },
+        "areaServed": "Bangalore",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        }
+    }
+    </script>
+
+    <!-- Structured data: FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Do you provide towing 24 hours a day?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Yukthi Towing Services is available 24/7, including nights, weekends and holidays."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which areas of Bangalore do you cover?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We cover Bangalore and nearby areas. Call us with your location and we will confirm availability."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you tow bikes as well as cars?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We handle cars, bikes and scooters, as well as accident recovery and long-distance towing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How is towing priced?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pricing depends on the vehicle type, distance and situation. We share the charge on the phone before dispatching."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What should I do while waiting for the tow truck?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Move to a safe spot if you can, switch on hazard lights, keep your documents and keys ready, and share your live location with us on WhatsApp."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-
+    <!-- HEADER -->
     <header class="header">
-
         <div class="container navbar">
 
             <a href="#home" class="logo">
-                <img src="assets/yukthi-logo.png" alt="Yukthi Towing Services">
+                <img src="assets/logo.png" alt="Yukthi Towing Services">
             </a>
 
-            <button class="menu-btn" id="menuBtn">
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
                 ☰
             </button>
 
             <nav class="nav" id="nav">
-
                 <a href="#home">Home</a>
-
                 <a href="#services">Services</a>
-
-                <a href="#about">About Us</a>
-
-                <a href="#blog">Blog</a>
-
+                <a href="#how">How It Works</a>
+                <!-- <a href="#areas">Areas</a> -->
+                <a href="#faq">FAQ</a>
                 <a href="#contact">Contact</a>
-
             </nav>
 
-            <!-- CALL DIRECTLY -->
-            <a href="tel:+919916999026" class="btn btn-orange header-call">
-                Call Now
-            </a>
+            <a href="tel:+919916999026" class="btn btn-orange header-call">Call Now</a>
 
         </div>
-
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
-
+    <!-- HERO -->
     <section class="hero" id="home">
-
         <div class="hero-overlay"></div>
 
         <div class="container hero-container">
-
             <div class="hero-content">
 
-                <div class="hero-label">
-                    24/7 ROADSIDE ASSISTANCE
-                </div>
+                <div class="hero-label">24/7 ROADSIDE ASSISTANCE</div>
 
                 <h1>
                     Need Towing in Bangalore?
@@ -85,575 +153,511 @@
                 </p>
 
                 <div class="hero-buttons">
+                    <a href="tel:+919916999026" class="btn btn-orange">📞 Call Now</a>
 
-                    <!-- PHONE CALL -->
-                    <a href="tel:+919916999026" class="btn btn-orange">
-                        📞 Call Now
+                    <a href="https://wa.me/919916999026?text=Hi%20Yukthi%20Towing%2C%20I%20need%20a%20tow.%20My%20location%20is%3A%20"
+                        class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        💬 WhatsApp Us
                     </a>
-
-                    <a href="#contact" class="btn btn-outline">
-                        Book Towing
-                    </a>
-
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
 
-    <!-- =========================
-         TRUST STRIP
-    ========================== -->
-
+    <!-- TRUST STRIP -->
     <section class="trust">
-
         <div class="container trust-grid">
 
             <div class="trust-item">
-
                 <span class="trust-icon">✓</span>
-
-                <strong>
-                    24/7 Roadside Assistance
-                </strong>
-
+                <strong>24/7 Roadside Assistance</strong>
             </div>
 
-
             <div class="trust-item">
-
                 <span class="trust-icon">✓</span>
-
-                <strong>
-                    Fast Response
-                </strong>
-
+                <strong>Fast Response</strong>
             </div>
 
-
             <div class="trust-item">
-
                 <span class="trust-icon">✓</span>
-
-                <strong>
-                    Transparent Pricing
-                </strong>
-
+                <strong>Transparent Pricing</strong>
             </div>
 
         </div>
-
     </section>
 
 
-    <!-- =========================
-         SERVICES
-    ========================== -->
-
+    <!-- SERVICES -->
+    <!-- SERVICES -->
     <section class="section services" id="services">
-
         <div class="container">
 
             <div class="section-heading">
-
-                <span>
-                    OUR SERVICES
-                </span>
-
-                <h2>
-                    Towing & Roadside Services
-                </h2>
-
-                <p>
-                    Professional operators, modern towing equipment,
-                    and customer-first service across Bangalore.
-                </p>
-
-            </div>
-
-
-            <div class="services-grid">
-
-
-                <!-- LOCAL CAR -->
-
-                <article class="service-card">
-
-                    <img src="assets/local-car-towing.jpg"
-                        alt="Local car towing service in Bangalore">
-
-                    <div class="service-body">
-
-                        <div class="service-icon">
-                            🚗
-                        </div>
-
-                        <h3>
-                            Local Car Towing
-                        </h3>
-
-                        <p>
-                            Safe and dependable car towing
-                            across Bangalore.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- LONG DISTANCE -->
-
-                <article class="service-card">
-
-                    <img src="assets/long-distance-towing.jpg"
-                        alt="Long distance towing service">
-
-                    <div class="service-body">
-
-                        <div class="service-icon">
-                            🛣️
-                        </div>
-
-                        <h3>
-                            Long-Distance Towing
-                        </h3>
-
-                        <p>
-                            Reliable vehicle transportation
-                            for longer journeys.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- ACCIDENT -->
-
-                <article class="service-card">
-
-                    <img src="assets/accident-recovery.jpg"
-                        alt="Accident vehicle recovery service">
-
-                    <div class="service-body">
-
-                        <div class="service-icon">
-                            🚘
-                        </div>
-
-                        <h3>
-                            Accident Recovery
-                        </h3>
-
-                        <p>
-                            Professional vehicle recovery
-                            after roadside incidents.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- EMERGENCY -->
-
-                <article class="service-card">
-
-                    <img src="assets/emergency-towing.jpg"
-                        alt="Emergency towing service">
-
-                    <div class="service-body">
-
-                        <div class="service-icon">
-                            ⚡
-                        </div>
-
-                        <h3>
-                            Breakdown & Emergency Towing
-                        </h3>
-
-                        <p>
-                            Quick roadside assistance when
-                            your vehicle cannot continue.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- BIKE -->
-
-                <article class="service-card">
-
-                    <img src="assets/bike-towing.jpg"
-                        alt="Bike towing service in Bangalore">
-
-                    <div class="service-body">
-
-                        <div class="service-icon">
-                            🏍️
-                        </div>
-
-                        <h3>
-                            Bike Towing
-                        </h3>
-
-                        <p>
-                            Safe motorcycle transportation
-                            and roadside assistance.
-                        </p>
-
-                    </div>
-
-                </article>
-
+                <span>OUR SERVICES</span>
+                <h2>Towing &amp; Roadside Services</h2>
+                <p>Professional operators, modern towing equipment, and customer-first service across Bangalore.</p>
             </div>
 
         </div>
 
+        <div class="services-grid">
+
+            <article class="service-card service-featured">
+                <img src="assets/towing.jpg" alt="Local car towing service in Bangalore">
+                <div class="service-body">
+                    <!-- <div class="service-icon">🚗</div> -->
+                    <h3>Local Car Towing</h3>
+                    <p>Safe and dependable car towing across Bangalore.</p>
+                    <a class="card-link" href="tel:+919916999026">Call for this service →</a>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img src="assets/long-distance-towing.jpg" alt="Long distance towing service">
+                <div class="service-body">
+                    <!-- <div class="service-icon">🛣️</div> -->
+                    <h3>Long-Distance Towing</h3>
+                    <p>Reliable vehicle transportation for longer journeys.</p>
+                    <a class="card-link" href="tel:+919916999026">Call for this service →</a>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img src="assets/accident-recovery.jpg" alt="Accident vehicle recovery service">
+                <div class="service-body">
+                    <!-- <div class="service-icon">🚘</div> -->
+                    <h3>Accident Recovery</h3>
+                    <p>Professional vehicle recovery after roadside incidents.</p>
+                    <a class="card-link" href="tel:+919916999026">Call for this service →</a>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img src="assets/emergency-towing.jpg" alt="Emergency towing service">
+                <div class="service-body">
+                    <!-- <div class="service-icon">⚡</div> -->
+                    <h3>Breakdown &amp; Emergency Towing</h3>
+                    <p>Quick roadside assistance when your vehicle cannot continue.</p>
+                    <a class="card-link" href="tel:+919916999026">Call for this service →</a>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img src="assets/local-car-towing.jpg" alt="Bike towing service in Bangalore">
+                <div class="service-body">
+                    <!-- <div class="service-icon">🏍️</div> -->
+                    <h3>Bike Towing</h3>
+                    <p>Safe motorcycle transportation and roadside assistance.</p>
+                    <a class="card-link" href="tel:+919916999026">Call for this service →</a>
+                </div>
+            </article>
+
+        </div>
     </section>
 
 
-    <!-- =========================
-         ABOUT
-    ========================== -->
+    <!-- HOW IT WORKS -->
+    <section class="section how" id="how">
+        <div class="container">
 
+            <div class="section-heading">
+                <span>SIMPLE PROCESS</span>
+                <h2>Help in 3 Easy Steps</h2>
+                <p>No forms, no waiting on hold. Just reach us and we get moving.</p>
+            </div>
+
+            <div class="steps-grid">
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Call or WhatsApp</h3>
+                    <p>Tell us your location, vehicle type and what happened.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Get Your Quote</h3>
+                    <p>We confirm the charge on the phone before we dispatch.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>We Reach You</h3>
+                    <p>Our operator arrives and safely moves your vehicle.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
     <section class="section about" id="about">
-
         <div class="container about-grid">
 
             <div class="about-image">
-
-                <img src="assets/hero-towing.jpg"
-                    alt="Yukthi towing service">
-
+                <img src="assets/hero-towing.jpg" alt="Yukthi towing service">
             </div>
-
 
             <div class="about-content">
 
-                <span class="section-label">
-                    ABOUT YUKTHI
-                </span>
+                <span class="section-label">ABOUT YUKTHI</span>
 
-                <h2>
-                    Dependable Help When
-                    You Need It
-                </h2>
+                <h2>Dependable Help When You Need It</h2>
 
                 <p>
                     Professional operators, modern towing equipment,
                     and customer-first service across Bangalore.
                 </p>
 
-
                 <div class="features">
-
-                    <div>
-                        <span>✓</span>
-                        24/7 Availability
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        Professional Operators
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        Modern Equipment
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        Transparent Pricing
-                    </div>
-
+                    <div><span>✓</span> 24/7 Availability</div>
+                    <div><span>✓</span> Professional Operators</div>
+                    <div><span>✓</span> Modern Equipment</div>
+                    <div><span>✓</span> Transparent Pricing</div>
                 </div>
 
-
-                <a href="tel:+919916999026"
-                    class="btn btn-orange">
-
-                    📞 Call Now
-
-                </a>
+                <a href="tel:+919916999026" class="btn btn-orange">📞 Call Now</a>
 
             </div>
 
         </div>
-
     </section>
 
 
-    <!-- =========================
-         BLOG
-    ========================== -->
-
-    <section class="section blog" id="blog">
-
+    <!-- AREAS WE SERVE -->
+    <!-- <section class="section areas" id="areas">
         <div class="container">
 
             <div class="section-heading">
-
-                <span>
-                    ROADSIDЕ INFORMATION
-                </span>
-
-                <h2>
-                    Roadside Tips & Updates
-                </h2>
-
+                <span>SERVICE AREAS</span>
+                <h2>Areas We Serve in Bangalore</h2>
                 <p>
-                    Useful information for drivers dealing
-                    with breakdowns and roadside problems.
+                    We cover the whole city. Not sure if we reach your spot?
+                    Call us and we'll confirm.
                 </p>
-
             </div>
 
+          
+            <ul class="area-chips">
+                <li>Whitefield</li>
+                <li>Electronic City</li>
+                <li>Hebbal</li>
+                <li>Koramangala</li>
+                <li>Indiranagar</li>
+                <li>HSR Layout</li>
+                <li>Marathahalli</li>
+                <li>Jayanagar</li>
+                <li>Yelahanka</li>
+                <li>Bannerghatta Road</li>
+                <li>Hosur Road</li>
+                <li>Tumkur Road</li>
+                <li>Mysore Road</li>
+                <li>Outer Ring Road</li>
+            </ul>
 
-            <div class="blog-grid">
-
-
-                <!-- BLOG 1 -->
-
-                <article class="blog-card">
-
-                    <img src="assets/emergency-towing.jpg"
-                        alt="Vehicle breakdown roadside assistance">
-
-                    <div class="blog-content">
-
-                        <span>
-                            ROADSIDE TIPS
-                        </span>
-
-                        <h3>
-                            What to Do After a Vehicle Breakdown
-                        </h3>
-
-                        <p>
-                            Simple steps to stay safe and prepare
-                            your vehicle for roadside assistance.
-                        </p>
-
-                    </div>
-
-                </article>
+        </div>
+    </section> -->
 
 
-                <!-- BLOG 2 -->
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+        <div class="container faq-container">
 
-                <article class="blog-card">
+            <div class="section-heading">
+                <span>COMMON QUESTIONS</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
 
-                    <img src="assets/car-towing.jpg"
-                        alt="Roadside safety guide">
+            <div class="faq-list">
 
-                    <div class="blog-content">
+                <details>
+                    <summary>Do you provide towing 24 hours a day?</summary>
+                    <p>Yes. We are available 24/7, including nights, weekends and holidays.</p>
+                </details>
 
-                        <span>
-                            SAFETY GUIDE
-                        </span>
+                <details>
+                    <summary>Which areas of Bangalore do you cover?</summary>
+                    <p>We cover Bangalore and nearby areas. Call us with your location and we will confirm availability.
+                    </p>
+                </details>
 
-                        <h3>
-                            Roadside Safety: A Quick Guide
-                        </h3>
+                <details>
+                    <summary>Do you tow bikes as well as cars?</summary>
+                    <p>Yes. We handle cars, bikes and scooters, as well as accident recovery and long-distance towing.
+                    </p>
+                </details>
 
-                        <p>
-                            Practical roadside safety tips for
-                            drivers dealing with an unexpected problem.
-                        </p>
+                <details>
+                    <summary>How is towing priced?</summary>
+                    <p>Pricing depends on the vehicle type, distance and situation. We share the charge on the phone
+                        before dispatching.</p>
+                </details>
 
-                    </div>
-
-                </article>
+                <details>
+                    <summary>What should I do while waiting for the tow truck?</summary>
+                    <p>Move to a safe spot if you can, switch on hazard lights, keep your documents and keys ready, and
+                        share your live location with us on WhatsApp.</p>
+                </details>
 
             </div>
 
         </div>
-
     </section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section class="contact" id="contact">
-
+    <!-- BLOG -->
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials" id="testimonials">
         <div class="container">
 
-            <div class="contact-box">
+            <div class="testimonials-header">
 
-                <div class="contact-text">
-
-                    <span>
-                        NEED ASSISTANCE?
-                    </span>
-
-                    <h2>
-                        Need Help Now?
-                    </h2>
-
-                    <p>
-                        Contact Yukthi Towing Services
-                        for 24/7 roadside assistance.
-                    </p>
-
-
-                    <div class="phone-numbers">
-
-                        <a href="tel:+919916999026">
-                            📞 9916999026
-                        </a>
-
-                        <a href="tel:+917483544001">
-                            📞 7483544001
-                        </a>
-
-                    </div>
-
+                <div class="section-heading">
+                    <span>CUSTOMER REVIEWS</span>
+                    <h2>What Bangalore Drivers Say</h2>
+                    <p>Real feedback from customers we've helped across the city — day and night.</p>
                 </div>
 
-
-                <div>
-
-                    <a href="tel:+919916999026"
-                        class="btn btn-dark">
-
-                        📞 Call Now
-
-                    </a>
-
+                <div class="slider-nav">
+                    <button class="slider-btn" id="sliderPrev" aria-label="Previous testimonials">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-btn" id="sliderNext" aria-label="Next testimonials">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
                 </div>
 
             </div>
 
-        </div>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-track" id="testimonialTrack">
 
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "My car broke down on Outer Ring Road at 11 PM. Called Yukthi
+                            and the tow truck reached in about 30 minutes. Very professional
+                            and the price was exactly what they quoted."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">R</div>
+                            <div>
+                                <strong>Rahul Gowda</strong>
+                                <span>Marathahalli</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "My bike wouldn't start near Silk Board. They picked it up
+                            safely and dropped it at my mechanic in Jayanagar. Friendly
+                            team and honest pricing."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">P</div>
+                            <div>
+                                <strong>Priya Shetty</strong>
+                                <span>HSR Layout</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "Had an accident near Electronic City flyover. They handled
+                            the recovery carefully and kept me updated the whole time.
+                            Highly recommend for emergency situations."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">A</div>
+                            <div>
+                                <strong>Arjun Nair</strong>
+                                <span>Electronic City</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "Needed to tow my car to Mysore. The driver was punctual,
+                            careful with the vehicle, and the charges were reasonable.
+                            Will use them again."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">S</div>
+                            <div>
+                                <strong>Sneha Reddy</strong>
+                                <span>Whitefield</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "Called them from Hebbal at 2 AM when my SUV wouldn't start.
+                            Quick response, no haggling, and the operator was very polite.
+                            Good service."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">M</div>
+                            <div>
+                                <strong>Mohammed Irfan</strong>
+                                <span>Hebbal</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "My scooter broke down near Koramangala. They arrived fast
+                            and dropped it home safely. Simple process, called on WhatsApp
+                            and shared my location."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">K</div>
+                            <div>
+                                <strong>Kavya Iyer</strong>
+                                <span>Koramangala</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <div class="slider-dots" id="sliderDots"></div>
+
+        </div>
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- CONTACT -->
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-bg">
+            <div class="contact-overlay"></div>
 
+            <div class="container contact-inner">
+
+                <div class="contact-content">
+
+                    <span class="contact-label">NEED ASSISTANCE?</span>
+
+                    <h2>Stuck on the Road?<br>We're Ready 24/7.</h2>
+
+                    <p>
+                        Fast, dependable towing and roadside assistance
+                        across Bangalore. One call is all it takes.
+                    </p>
+
+                    <div class="contact-actions">
+
+                        <a href="tel:+919916999026" class="btn btn-orange">
+                            📞 Call Now
+                        </a>
+                        <a class="btn btn-whatsapp"
+                            href="https://wa.me/919916999026?text=Hi%20Yukthi%20Towing%2C%20I%20need%20a%20tow.%20My%20location%20is%3A%20"
+                            target="_blank" rel="noopener">
+
+                            <svg class="wa-icon" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true">
+                                <path fill="#ffffff"
+                                    d="M16.04 3C8.86 3 3 8.84 3 16.02c0 2.29.6 4.52 1.74 6.49L3 29l6.66-1.74A13.03 13.03 0 0 0 16.04 29C23.2 29 29 23.18 29 16.02 29 8.84 23.2 3 16.04 3zm0 23.6c-1.9 0-3.77-.51-5.4-1.48l-.39-.23-3.94 1.03 1.05-3.85-.25-.4a10.55 10.55 0 0 1-1.62-5.65c0-5.85 4.76-10.61 10.61-10.61 5.85 0 10.6 4.76 10.6 10.61 0 5.85-4.75 10.58-10.6 10.58zm5.82-7.94c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1.01 1.24-.19.21-.37.24-.69.08-.32-.16-1.34-.5-2.56-1.58-.95-.84-1.58-1.88-1.77-2.2-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.72-.98-2.36-.26-.62-.52-.54-.71-.55l-.61-.01c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.64 0 1.56 1.14 3.07 1.29 3.28.16.21 2.23 3.41 5.41 4.78.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.15-1.51.27-.74.27-1.38.19-1.51-.08-.13-.29-.21-.61-.37z" />
+                            </svg>
+
+                            WhatsApp Us
+                        </a>
+                    </div>
+
+                    <div class="contact-mini-numbers">
+                        <a href="tel:+919916999026">
+                            <span>📞</span> 9916999026
+                        </a>
+                        <a href="tel:+917483544001">
+                            <span>📞</span> 7483544001
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
     <footer>
 
         <div class="container footer-grid">
 
-
             <div class="footer-brand">
 
-                <img src="assets/yukthi-logo.png"
-                    alt="Yukthi Towing Services">
+                <img src="assets/yukthi-logo.png" alt="Yukthi Towing Services">
 
-                <p>
-                    Professional towing and roadside
-                    assistance across Bangalore.
-                </p>
-
+                <p>Professional towing and roadside assistance across Bangalore.</p>
 
                 <div class="footer-phone">
-
-                    <a href="tel:+919916999026">
-                        📞 9916999026
-                    </a>
-
-                    <a href="tel:+917483544001">
-                        📞 7483544001
-                    </a>
-
+                    <a href="tel:+919916999026">📞 9916999026</a>
+                    <a href="tel:+917483544001">📞 7483544001</a>
                 </div>
 
             </div>
 
-
             <div class="footer-column">
-
-                <h3>
-                    Navigation
-                </h3>
-
+                <h3>Navigation</h3>
                 <a href="#home">Home</a>
-
                 <a href="#services">Services</a>
-
-                <a href="#about">About Us</a>
-
-                <a href="#blog">Blog</a>
-
+                <a href="#how">How It Works</a>
+                <!-- <a href="#areas">Areas</a> -->
+                <a href="#faq">FAQ</a>
                 <a href="#contact">Contact</a>
-
             </div>
 
-
             <div class="footer-column">
-
-                <h3>
-                    Services
-                </h3>
-
-                <a href="#services">
-                    Car Towing
-                </a>
-
-                <a href="#services">
-                    Bike Towing
-                </a>
-
-                <a href="#services">
-                    Accident Recovery
-                </a>
-
-                <a href="#services">
-                    Emergency Towing
-                </a>
-
-                <a href="#services">
-                    Long-Distance Towing
-                </a>
-
+                <h3>Services</h3>
+                <a href="#services">Car Towing</a>
+                <a href="#services">Bike Towing</a>
+                <a href="#services">Accident Recovery</a>
+                <a href="#services">Emergency Towing</a>
+                <a href="#services">Long-Distance Towing</a>
             </div>
 
         </div>
 
-
         <div class="container footer-bottom">
-
-            <p>
-                © 2026 Yukthi Towing Services.
-                All rights reserved.
-            </p>
-
-            <p>
-                Bangalore, Karnataka
-            </p>
-
+            <p>© 2026 Yukthi Towing Services. All rights reserved.</p>
+            <p>Bangalore, Karnataka</p>
         </div>
 
     </footer>
 
 
-    <!-- =========================
-         MOBILE CALL BAR
-    ========================== -->
+    <!-- FLOATING WHATSAPP -->
+    <a class="whatsapp-float"
+        href="https://wa.me/919916999026?text=Hi%20Yukthi%20Towing%2C%20I%20need%20a%20tow.%20My%20location%20is%3A%20"
+        target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        💬
+    </a>
 
+
+    <!-- MOBILE CALL BAR -->
     <div class="mobile-call-bar">
-
-        <a href="tel:+919916999026">
-            📞 9916999026
-        </a>
-
-        <a href="tel:+917483544001">
-            📞 7483544001
-        </a>
-
+        <a href="tel:+919916999026">📞 Call Now</a>
+        <a href="tel:+917483544001">📞 Alt Number</a>
     </div>
 
 
